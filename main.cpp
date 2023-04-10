@@ -28,7 +28,7 @@ int* getNumOfDenoms(int amount) {
 void run(){
     //First, get user input to count the denominations
     double amount;
-    cout << "Enter the amount to get change for: ";
+    cout << "Enter the amount to get change for (exclude the \"$\"): ";
 
     //Check user input is a number and get new input if invalid
     while (true){
