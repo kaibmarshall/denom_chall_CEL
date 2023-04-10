@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip> //For the setprecision, which is used for output legibility
+#include <iomanip> //For setprecision, which is used for output legibility
 #include <string.h>
 using namespace std;
 
@@ -13,7 +13,7 @@ const int US_DENOMS[] = {10000,5000,2000,1000,500,100,25,10,5,1};
 int* getNumOfDenoms(int amount) {
 
     static int demomCounter[NUM_OF_US_DENOMS];
-    memset(demomCounter, 0, sizeof(demomCounter));
+    memset(demomCounter, 0, sizeof(demomCounter)); //sets all values of teh counter array to 0
 
     for (int i = 0; i<NUM_OF_US_DENOMS; i++){
         while (amount >= US_DENOMS[i]) {
